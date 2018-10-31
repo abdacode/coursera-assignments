@@ -1,0 +1,120 @@
+
+/*
+  -------------
+  Base styling
+  -------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', Helvetica, sans-serif;
+  font-size: 1rem;      /* user-agent default font size : always 1rem = 16px */
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 4rem 0 2rem; 
+}
+
+h2 {
+  position: absolute; /* to position h2 up in the left corner of each container(div)*/
+  top: 0;             
+  right: 0;
+  width: 5em;           
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+div {
+  position: relative;        /* to position our h2 element */
+  border: 2px solid black;
+  padding: 3rem 1rem 1rem;
+  background-color: #bababa;
+  min-height: 10rem;         /* minimum height of three sections */
+}
+
+
+.chicken {
+  background-color: #e57b8f;
+}
+
+.beef {
+  background-color: #db4e4e;
+ }
+
+.sushi {
+  background-color: #efef6b;
+}
+
+
+/*
+  ---------------
+  Layout styling
+  ---------------
+*/
+.row {
+	width: 80%;
+	margin: 0 auto; /* Center the row */
+}
+
+
+/*
+  --------------
+  Media queries
+  --------------
+*/
+/********** Large devices only **********/
+    @media (min-width: 992px) {
+        .col-lg-4 {
+            float: left;
+            width: 31%;
+            margin-right: 3.5%;
+        }
+
+        .col-lg-4:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+
+/********** Medium devices only **********/
+    @media (min-width: 768px) and (max-width: 991px) {
+
+        .col-md-6 {
+            float: left;
+            width: 48%;
+            margin-right: 4%;
+            margin-bottom: 4%;
+        }
+       
+        .col-md-6:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        .col-md-12 {
+          width: 100%;
+          clear: left;
+        }
+    }
+
+
+/********** small devices only **********/
+    @media (max-width: 767px) {
+
+        .col-xs-12 {
+            width: 100%;
+            margin-bottom: 4%;
+        }
+
+    }
