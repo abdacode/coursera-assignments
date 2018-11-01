@@ -63,7 +63,7 @@ div {
   Layout styling
   ---------------
 */
-.row {
+.wrapper {
 	width: 80%;      /* 80% of the total viewport width */
 	margin: 0 auto;  /* Centered */
 }
