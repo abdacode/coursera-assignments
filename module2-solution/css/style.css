@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Comic Sans MS', Helvetica, sans-serif;
-  font-size: 1rem;      /* 1rem = 16px */
+  font-size: 1rem;      /* browser default font size 1rem = 16px */
   font-weight: normal;
   line-height: 1.5rem;
 }
@@ -25,9 +25,9 @@ h1 {
 }
 
 h2 {
-  position: absolute; /* to position h2 up in the left corner of each container(div)*/
-  top: 0;             
-  right: 0;
+  position: absolute; 
+  top: 0;             /* position h2 up in the right corner */
+  right: 0;           /* of each container (div) */ 
   width: 5em;           
   font-size: 1.25rem;
   font-weight: bold;
@@ -37,8 +37,8 @@ h2 {
 }
 
 div {
-  position: relative;        /* to position h2 element */
-  min-height: 10rem;         /* minimum height of three divs */
+  position: relative;
+  min-height: 10rem;         /* Give minimum height to three divs */
   padding: 3rem 1rem 1rem;
   border: 2px solid black;
   background-color: #bababa;
